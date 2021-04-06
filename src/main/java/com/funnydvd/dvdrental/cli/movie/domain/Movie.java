@@ -1,5 +1,7 @@
 package com.funnydvd.dvdrental.cli.movie.domain;
 
+import com.funnydvd.dvdrental.cli.user.domaain.User;
+
 //역할: 이 클래스는 하나의 DVD 정보를 저장할 수 있어야 한다.
 public class Movie {
 
@@ -9,7 +11,7 @@ public class Movie {
     private int pubYear;        //발매년도
     private int charge;         //대여금액
     private boolean rental;     //대여상태
-//    private User rentalUser;    //현재 대여자 정보
+    private User rentalUser;    //현재 대여자 정보
 
     //일련번호
     private static int sequence;
@@ -84,6 +86,14 @@ public class Movie {
 
     public static void setSequence(int sequence) {
         Movie.sequence = sequence;
+    }
+
+    public User getRentalUser() {
+        return rentalUser;
+    }
+
+    public void setRentalUser(User rentalUser) {
+        this.rentalUser = rentalUser;
     }
 
     public String toString() {
