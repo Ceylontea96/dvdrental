@@ -48,10 +48,10 @@ public class OrderController implements AppController {
 
     //대여 처리
     private void processOrderDVD() {
-        List<Movie> movieList = movieRepository.searchMovieList("", SearchCondition.POSSIBLE);
-        int count = movieList.size();
 
         while (true) {
+        List<Movie> movieList = movieRepository.searchMovieList("", SearchCondition.POSSIBLE);
+        int count = movieList.size();
             if (count > 0) {
                 System.out.println("\n============================== 대여 가능 DVD 목록 ==============================");
                 for (Movie movie : movieList) {
