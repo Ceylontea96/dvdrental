@@ -1,4 +1,4 @@
-package com.funnydvd.dvdrental.cli.user.domaain;
+package com.funnydvd.dvdrental.cli.user.domain;
 
 /**
  * 회원 등급 정책

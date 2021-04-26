@@ -1,7 +1,9 @@
-package com.funnydvd.dvdrental.cli.user.domaain;
+package com.funnydvd.dvdrental.cli.user.domain;
 
 import com.funnydvd.dvdrental.cli.order.domain.Order;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,7 +12,6 @@ public class User {
     private static int sequnce; // 회원 순차번호
 
     private int userNumber; //identifiter (식별자)
-
     private String userName; //회원명
     private String phoneNumber; //전화번호
     private int totalPaying; // 누적결제액
@@ -23,6 +24,15 @@ public class User {
         this.userName = userName;
         this.phoneNumber = phoneNumber;
         this.grade = Grade.BRONZE;
+    }
+
+    //DB조회데이터 처리 생성자
+    public User(ResultSet rs) throws SQLException {
+        this.userNumber = rs.getInt("user_number");
+        this.userName = rs.getString("user_name");
+        this.phoneNumber = rs.getString("phone_number");
+        this.totalPaying = rs.getInt("total_paying");
+        this.grade = Grade.valueOf(rs.getString("grade"));
     }
 
     //대여 주문 추가 기능

@@ -1,6 +1,6 @@
 package com.funnydvd.dvdrental.cli.user.repository;
 
-import com.funnydvd.dvdrental.cli.user.domaain.User;
+import com.funnydvd.dvdrental.cli.user.domain.User;
 
 import java.util.List;
 

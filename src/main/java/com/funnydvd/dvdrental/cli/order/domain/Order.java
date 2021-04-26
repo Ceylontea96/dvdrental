@@ -1,7 +1,7 @@
 package com.funnydvd.dvdrental.cli.order.domain;
 
 import com.funnydvd.dvdrental.cli.movie.domain.Movie;
-import com.funnydvd.dvdrental.cli.user.domaain.User;
+import com.funnydvd.dvdrental.cli.user.domain.User;
 
 import java.time.LocalDate;
 

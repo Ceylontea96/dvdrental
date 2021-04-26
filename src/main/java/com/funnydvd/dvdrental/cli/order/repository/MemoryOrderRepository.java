@@ -3,7 +3,7 @@ package com.funnydvd.dvdrental.cli.order.repository;
 import com.funnydvd.dvdrental.cli.movie.domain.Movie;
 import com.funnydvd.dvdrental.cli.order.domain.Order;
 import com.funnydvd.dvdrental.cli.order.domain.OrderStatus;
-import com.funnydvd.dvdrental.cli.user.domaain.User;
+import com.funnydvd.dvdrental.cli.user.domain.User;
 
 import java.util.HashMap;
 import java.util.Map;

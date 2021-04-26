@@ -8,8 +8,7 @@ import com.funnydvd.dvdrental.cli.movie.repository.MovieRepository;
 import com.funnydvd.dvdrental.cli.order.domain.Order;
 import com.funnydvd.dvdrental.cli.order.repository.MemoryOrderRepository;
 import com.funnydvd.dvdrental.cli.order.repository.OrderRepository;
-import com.funnydvd.dvdrental.cli.ui.AppUI;
-import com.funnydvd.dvdrental.cli.user.domaain.User;
+import com.funnydvd.dvdrental.cli.user.domain.User;
 import com.funnydvd.dvdrental.cli.user.repository.MemoryUserRepository;
 import com.funnydvd.dvdrental.cli.user.repository.UserRepository;
 

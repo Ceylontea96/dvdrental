@@ -142,7 +142,8 @@ public class JdbcBasic {
 
             //커서를 다음행으로 움직임(한 칸 아래로)
             while(rs.next()) {
-                JdbcPractice jb = new JdbcPractice(rs.getInt("id"),
+                JdbcPractice jb = new JdbcPractice(
+                        rs.getInt("id"),
                         rs.getString("name"),
                         rs.getString("addr"));
 
