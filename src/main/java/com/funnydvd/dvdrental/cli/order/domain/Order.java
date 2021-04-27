@@ -3,6 +3,8 @@ package com.funnydvd.dvdrental.cli.order.domain;
 import com.funnydvd.dvdrental.cli.movie.domain.Movie;
 import com.funnydvd.dvdrental.cli.user.domain.User;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.time.LocalDate;
 
 public class Order {
@@ -25,6 +27,11 @@ public class Order {
         this.orderDate = LocalDate.now();
         this.returnDate = orderDate.plusDays(3);
         this.orderStatus = OrderStatus.ORDERED;
+    }
+
+    //DB조회데이터 처리 생성자
+    public Order(ResultSet rs) throws SQLException {
+        this.orderNumber = rs.getInt("");
     }
 
 

@@ -8,22 +8,22 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MovieControllerTest {
-
-    private MovieController controller = new MovieController();
-    private MovieRepository repository = new MemoryMovieRepository();
-
-    @Test
-    @DisplayName("컨트롤러를 통해 영화 정보를 입력하면 잘 저장되어야 한다.")
-    void insertControlTest() {
-        controller.start();
-
-        System.out.println("==========================================");
-        repository.searchMovieList("", SearchCondition.ALL)
-                .forEach(movie -> System.out.println(movie));
-
-        System.out.println("==========================================");
-
-    }
-
-}
+//class MovieControllerTest {
+//
+//    private MovieController controller = new MovieController();
+//    private MovieRepository repository = new MemoryMovieRepository();
+//
+//    @Test
+//    @DisplayName("컨트롤러를 통해 영화 정보를 입력하면 잘 저장되어야 한다.")
+//    void insertControlTest() {
+//        controller.start();
+//
+//        System.out.println("==========================================");
+//        repository.searchMovieList("", SearchCondition.ALL)
+//                .forEach(movie -> System.out.println(movie));
+//
+//        System.out.println("==========================================");
+//
+//    }
+//
+//}

@@ -12,3 +12,8 @@ dependencies {
     compile fileTree(dir: '/src/main/webapp/WEB-INF/lib', includes: ['*.jar'])
 }
 ```
+-build.gradle에 spring core 추가
+
+//스프링 코어 라이브러리
+
+-implementation 'org.springframework:spring-core:5.2.9.RELEASE'

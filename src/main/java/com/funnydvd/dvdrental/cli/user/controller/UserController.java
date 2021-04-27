@@ -12,7 +12,11 @@ import static com.funnydvd.dvdrental.cli.ui.AppUI.*;
 
 public class UserController implements AppController {
 
-    private final UserRepository userRepository = new JdbcUserRepository();
+    private final UserRepository userRepository;
+
+    public UserController(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     public void start() {
 
